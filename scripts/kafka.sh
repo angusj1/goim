@@ -1,6 +1,6 @@
 #!/bin/bash
 # config parameters
-JDK_HOME=/usr/local/jdk8/
+JDK_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 KAFKA_HOME=/data/app/kafka/
 KAFKA_CONF=/data/app/kafka/config/server.properties 
 KAFKA_DATA=/data/kafka_data/
