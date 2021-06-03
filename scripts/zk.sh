@@ -24,7 +24,7 @@ echo ${ZK_ADDRS[@]}
 
 set -e
 
-curl -L https://www.apache.org/dyn/closer.lua/zookeeper/zookeeper-3.6.3/apache-zookeeper-3.6.3.tar.gz -o apache-zookeeper-3.6.3.tar.gz
+curl -L https://mirrors.bfsu.edu.cn/apache/zookeeper/zookeeper-3.6.3/apache-zookeeper-3.6.3.tar.gz -o apache-zookeeper-3.6.3.tar.gz
 tar zxf apache-zookeeper-3.6.3.tar.gz
 mkdir -p $ZK_HOME
 echo $ZK_ID>$ZK_HOME/myid
