@@ -24,11 +24,11 @@ echo ${ZK_ADDRS[@]}
 
 set -e
 
-curl -L https://mirrors.bfsu.edu.cn/apache/zookeeper/zookeeper-3.6.3/apache-zookeeper-3.6.3-bin.tar.gz -o apache-zookeeper-3.6.3.tar.gz
-tar zxf apache-zookeeper-3.6.3.tar.gz
+curl -L https://mirrors.bfsu.edu.cn/apache/zookeeper/zookeeper-3.6.3/apache-zookeeper-3.6.3-bin.tar.gz -o apache-zookeeper-3.6.3-bin.tar.gz
+tar zxf apache-zookeeper-3.6.3-bin.tar.gz
 mkdir -p $ZK_HOME
 echo $ZK_ID>$ZK_HOME/myid
-mv apache-zookeeper-3.6.3/* $ZK_HOME
+mv apache-zookeeper-3.6.3-bin/* $ZK_HOME
 echo "tickTime=2000" > $ZK_HOME/conf/zoo.cfg
 echo "initLimit=10" >> $ZK_HOME/conf/zoo.cfg 
 echo "syncLimit=5" >> $ZK_HOME/conf/zoo.cfg
