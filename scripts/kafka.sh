@@ -30,12 +30,12 @@ echo "jdk not exist down jdk8"
 fi
 
 # download kafka
-curl "http://apache.stu.edu.tw/kafka/2.1.0/kafka_2.11-2.1.0.tgz"  -o kafka_2.11-2.1.0.tgz
-tar zxf kafka_2.11-2.1.0.tgz
+curl "https://mirrors.bfsu.edu.cn/apache/kafka/2.8.0/kafka_2.12-2.8.0.tgz"  -o kafka_2.12-2.8.0.tgz
+tar zxf kafka_2.12-2.8.0.tgz
 # install kafka
 mkdir -p $KAFKA_HOME
 mkdir -p $KAFKA_DATA
-mv kafka_2.11-2.1.0/* $KAFKA_HOME
+mv kafka_2.12-2.8.0/* $KAFKA_HOME
 # kafka config
 echo "broker.id=$BROKER_ID">$KAFKA_CONF
 echo "host.name=$CURRENT_ADDR">>$KAFKA_CONF
