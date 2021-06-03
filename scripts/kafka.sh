@@ -81,6 +81,6 @@ stdout_logfile_maxbytes=100MB
 stdout_logfile_backups=5
 stderr_logfile_maxbytes=100MB
 stderr_logfile_backups=5
-environment=JAVA_HOME=$JDK_HOME,JRE_HOME='$JDK_HOME/jre',KAFKA_HEAP_OPTS='-Xmx6g -Xms6g -XX:MetaspaceSize=96m -XX:G1HeapRegionSize=16M -XX:MinMetaspaceFreeRatio=50 -XX:MaxMetaspaceFreeRatio=80'">$_KAFKA_SUPERVISOR
+environment=JAVA_HOME=$JDK_HOME,JRE_HOME='$JDK_HOME/jre',KAFKA_HEAP_OPTS='-Xmx6g -Xms6g -XX:MetaspaceSize=96m -XX:G1HeapRegionSize=16M -XX:MinMetaspaceFreeRatio=50 -XX:MaxMetaspaceFreeRatio=80'">$KAFKA_SUPERVISOR
 
 supervisorctl update
